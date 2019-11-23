@@ -6,7 +6,7 @@
 void quick(int vet[], int ini, int fim);
 
 int main(){
-    int vet[10] = {3, 4, 5, 7, 6, 1, 9, 2, 8, 0};
+    int vet[11] = {3, 4, 5, 7, 6, 1, 9, 2, 8, 0};
     int i;
 
     printf("Vetor desordenado: ");
