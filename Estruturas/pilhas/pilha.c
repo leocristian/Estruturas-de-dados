@@ -26,6 +26,7 @@ void popPilha(Pilha *p){
     if(p->n == 0){
         puts("Pilha vazia.");
     }else{
+        printf("Valor removido: %d\n", p->vet[p->n-1]);
         p->n--;
     }
 }
