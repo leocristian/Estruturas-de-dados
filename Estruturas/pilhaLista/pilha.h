@@ -1,4 +1,4 @@
-typedef struct lista Lista;
+typedef struct no No;
 typedef struct pilha Pilha;
 
 Pilha *criarPilha();

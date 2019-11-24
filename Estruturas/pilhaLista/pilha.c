@@ -2,13 +2,13 @@
 #include<stdlib.h>
 #include"pilha.h"
 
-struct lista{
+struct no{
     int info;
-    Lista *prox;
+    No *prox;
 };
 
 struct pilha{
-    Lista *prim;
+    No *prim;
 };
 
 Pilha *criarPilha(){
@@ -18,14 +18,14 @@ Pilha *criarPilha(){
     return p;
 }
 void pushPilha(Pilha *p, int valor){
-    Lista *novo = (Lista *)malloc(sizeof(Lista));
+    No *novo = (No *)malloc(sizeof(No));
 
     novo->info = valor;
     novo->prox = p->prim;
     p->prim = novo;
 }
 int popPilha(Pilha *p){
-    Lista *aux;
+    No *aux;
     int valor;
 
     if(p->prim == NULL){
