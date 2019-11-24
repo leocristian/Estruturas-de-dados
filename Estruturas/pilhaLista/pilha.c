@@ -42,8 +42,13 @@ void topo(Pilha *p){
     printf("Topo da pilha: %d\n", p->prim->info);
 }
 void liberar(Pilha *p){
-    while(p->prim != NULL){
-        free(p->prim);
-        p->prim = p->prim->prox;
+    No *primeiro = p->prim;
+    
+    while(primeiro != NULL){
+        No *aux = primeiro->prox;
+        free(primeiro);
+
+        primeiro = aux;
     }
+    free(p);
 }
