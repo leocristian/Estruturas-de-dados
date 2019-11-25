@@ -47,6 +47,7 @@ void liberarFila(Fila *f){
         free(f->inicio);
         f->inicio = f->inicio->prox;
     }
+    free(f);
 }
 void mostrar(Fila *f){
     // printf("Inicio: %d\n", f->inicio->info);
