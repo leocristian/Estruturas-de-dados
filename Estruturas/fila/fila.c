@@ -30,7 +30,29 @@ void inserirFila(Fila *f, int valor){
     }
     f->fim = novo;
 }
+void removerFila(Fila *f){
+    No *aux;
+
+    if(f->inicio->prox == NULL && f->fim->prox == NULL){
+        printf("Lista Vazia.\n");
+        exit(1);
+    }
+    aux = f->inicio;
+    f->inicio = aux->prox;
+    printf("Valor removido: %d\n", aux->info);
+    free(aux);
+}
+void liberarFila(Fila *f){
+    while(f->inicio != NULL){
+        free(f->inicio);
+        f->inicio = f->inicio->prox;
+    }
+}
 void mostrar(Fila *f){
-    printf("Inicio: %d\n", f->inicio->info);
-    printf("Final: %d\n", f->fim->info);
+    // printf("Inicio: %d\n", f->inicio->info);
+    // printf("Final: %d\n", f->fim->info);
+    printf("Fila: ");
+    for (No *aux = f->inicio; aux != NULL; aux = aux->prox)
+        printf("%d ", aux->info);
+    printf("\n");
 }

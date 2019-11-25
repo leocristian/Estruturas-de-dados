@@ -17,14 +17,13 @@ int main(int argc, char const *argv[])
                 inserirFila(f, valor);
                 break;
             case 2:
-                //valor = removerFila(f);
-                printf("Valor removido: %d\n", valor);
+                removerFila(f);
                 break;
             case 3:
                 mostrar(f);
         }
     }
 
-    //liberarFila(f);
+    liberarFila(f);
     return 0;
 }
