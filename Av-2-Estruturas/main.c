@@ -1,4 +1,4 @@
-#include"teste.h"
+#include"batalha.h"
 #include<stdio.h>
 #include<stdlib.h>
 
