@@ -6,7 +6,7 @@
 
 struct bucket{
   int quantidade;
-  char valores[TAM];
+  char valores[TAM]; 
 };
 
 typedef struct bucket Bucket;

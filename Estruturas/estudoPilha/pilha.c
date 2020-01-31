@@ -22,7 +22,7 @@ Pilha *criarPilha(){
 void inserirPilha(Pilha *p, int valor, char nome[]){
     No *novo = (No *)malloc(sizeof(No));
 
-    novo->info = valor;
+    novo->info = valor; 
     strcpy(novo->nome, nome);
     novo->prox = p->primeiro;
     p->primeiro = novo;

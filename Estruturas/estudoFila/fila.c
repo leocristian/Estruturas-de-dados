@@ -29,7 +29,7 @@ void inserirFila(Fila *f, int valor, char nome[]){
     strcpy(novo->nome, nome);
     novo->prox = NULL;
 
-    if(f->fim != NULL){
+    if(f->fim != NULL){ 
         f->fim->prox = novo;
     }else{
         f->inicio = novo;

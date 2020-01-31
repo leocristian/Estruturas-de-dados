@@ -11,3 +11,4 @@ void mostrarLutadores(Fila *lutadores);
 void mostrarPerdedores(Pilha *perdedores);
 void realizarLuta(Fila *lutadores, Pilha *perdedores);
 void liberar(Fila *lutadores);
+ 

@@ -14,7 +14,7 @@ int main(){
         printf("%d ", vet[i]);
     }
     
-    quick(vet, 0, 10);
+    quick(vet, 0, 10); 
 
     printf("\nVetor ordenado: ");
     for (i = 0; i < 10; i++){

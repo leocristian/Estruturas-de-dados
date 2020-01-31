@@ -5,4 +5,4 @@ Pilha *criarPilha();
 void mostrar(Pilha *p);
 void inserirPilha(Pilha *p, int valor, char nome[]);
 void removerPilha(Pilha *p);
-void liberar(Pilha *p);
+void liberar(Pilha *p); 

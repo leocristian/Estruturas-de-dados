@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         printf("Escolha a opcao: ");
         scanf("%d", &op);
         switch(op){
-            case 1:
+            case 1: 
                 printf("Nome do lutador: ");
                 setbuf(stdin, NULL);
                 scanf("%s", nome);

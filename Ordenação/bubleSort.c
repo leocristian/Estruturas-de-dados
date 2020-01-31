@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-char *bubbleSort(char str[10]){
+char *bubbleSort(char str[10]){ 
     int n = strlen(str);
 
     for(int i = 0; i < n-1; i++){

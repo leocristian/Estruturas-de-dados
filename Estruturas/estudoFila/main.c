@@ -14,7 +14,7 @@ int main(int argc, char const *argv[]){
     while(op != 0){
         printf("Escolha a opção: ");
         scanf("%d", &op);
-        switch(op){
+        switch(op){ 
             case 1:
                 printf("Idade: ");
                 scanf("%d", &valor);

@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h> 
 #include"pilha.h"
 
 int main(int argc, char const *argv[]){
@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]){
     Pilha *p;
     int op = -1, valor;
     char nome[10];
-
+ 
     p = criarPilha();
 
     printf("1 - Inserir dados na pilha\n2 - Remover\n3 - Mostrar\n");

@@ -147,7 +147,7 @@ void realizarLuta(Fila *lutadores, Pilha *perdedores){
         }while(lutadores->inicio != NULL);
     }
 }
-void liberar(Fila *lutadores){
+void liberar(Fila *lutadores){ 
     while(lutadores->inicio != NULL){
         free(lutadores->inicio);
         lutadores->inicio = lutadores->inicio->prox;
