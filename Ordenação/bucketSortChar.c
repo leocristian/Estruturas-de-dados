@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 #define TAM 5
 
 struct bucket{
   int quantidade;
-  int valores[TAM];
+  char valores[TAM];
 };
 
 typedef struct bucket Bucket;
 
-void selection(int *num, int tam){ 
+void selection(char *num, int tam){ 
   int i, j, min, aux, cont=0;
   for (i = 0; i < (tam-1); i++){
     min = i;
@@ -27,7 +28,7 @@ void selection(int *num, int tam){
   }
 }
 
-void bucket(int *vetor, int tamanho){
+void bucket(char *vetor, int tamanho){
   int maior, menor, nBuckets, p;
   Bucket *baldes;
   maior = menor = vetor[0];
@@ -61,24 +62,20 @@ void bucket(int *vetor, int tamanho){
   for (int i = 0; i < nBuckets; i++){
     printf("Bucket %d: ", i);
     for (int j = 0; j < baldes[i].quantidade; j++){
-      printf("%d ", baldes[i].valores[j]);
+      printf("%c ", baldes[i].valores[j]);
     }
     printf("\n");
   }
   free(baldes);
 }
 int main(){
-  int data[] = {20, 4, 12, 65, 18, 34, 2, 1, 5, 76, 34};
-  int t = 10;
+  char str[30];
+
+  printf("Digite a palavra: ");
+  scanf("%s", str);
   printf("vetor desordenado: ");
-  for (int i = 0; i < t; i++){
-    printf("%d ", data[i]);
-  }
   printf("\n\n");
-  bucket(data, t);
+  bucket(str, strlen(str));
   printf("\nvetor ordenado: ");
-  for (int i = 0; i < t; i++){
-    printf("%d ", data[i]);
-  }
-  printf("\n");
+  printf("%s\n", str);
 }
