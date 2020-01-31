@@ -68,7 +68,11 @@ void bucket(int *vetor, int tamanho){
   free(baldes);
 }
 int main(){
+<<<<<<< HEAD
   int data[] = {20, 4, 12, 65, 18, 34, 2, 1, 5, 76, 34};
+=======
+  int data[] = {11, 9, 21, 8, 17, 19, 13, 1, 24, 12};
+>>>>>>> d41bd23fc4aeb06a12ededabf35631d5fab9f5ae
   int t = 10;
   printf("vetor desordenado: ");
   for (int i = 0; i < t; i++){
